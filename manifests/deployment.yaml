@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: autodeployHamid40
+  name: autodeployhamid41
   labels:
-    app: autodeployHamid40
+    app: autodeployhamid41
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1719274146545
+  namespace: namespace-workflow-1719274791109
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: autodeployHamid40
+      app: autodeployhamid41
   template:
     metadata:
       labels:
-        app: autodeployHamid40
+        app: autodeployhamid41
     spec:
       containers:
-        - name: autodeployHamid40
-          image: acrworkflow1719274146545.azurecr.io/image-workflow-1719274146545:latest
+        - name: autodeployhamid41
+          image: acrworkflow1719274791109.azurecr.io/image-workflow-1719274791109:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
